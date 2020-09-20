@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 # swirgeswap-exchange
 
+=======
+>>>>>>> aa4b8f37d0c4ea26bcf9373463a4127c86dcf61f
 # Uniswap Interface
 
 [![Tests](https://github.com/Uniswap/uniswap-interface/workflows/Tests/badge.svg)](https://github.com/Uniswap/uniswap-interface/actions?query=workflow%3ATests)
@@ -51,7 +54,11 @@ To have the interface default to a different network when a wallet is not connec
 3. Change `REACT_APP_NETWORK_URL` to e.g. `"https://{YOUR_NETWORK_ID}.infura.io/v3/{YOUR_INFURA_KEY}"`
 
 Note that the interface only works on testnets where both
+<<<<<<< HEAD
 [SwirgeSwap LP Token](https://uniswap.org/docs/v2/smart-contracts/factory/) and
+=======
+[SushiSwap LP Token](https://uniswap.org/docs/v2/smart-contracts/factory/) and
+>>>>>>> aa4b8f37d0c4ea26bcf9373463a4127c86dcf61f
 [multicall](https://github.com/makerdao/multicall) are deployed.
 The interface will not work on other networks.
 
