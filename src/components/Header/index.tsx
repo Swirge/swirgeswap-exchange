@@ -6,7 +6,7 @@ import { Text } from 'rebass'
 import styled from 'styled-components'
 
 import Logo from '../../assets/images/swirgepay.png'
-import LogoDark from '../../assets/images/chef.png'
+import LogoDark from '../../assets/images/swirgepayb.png'
 import { useActiveWeb3React } from '../../hooks'
 import { useDarkModeManager } from '../../state/user/hooks'
 import { useETHBalances } from '../../state/wallet/hooks'
@@ -149,18 +149,16 @@ export default function Header() {
 
   return (
     <HeaderFrame>
-      <RowBetween style={{ alignItems: 'center', justifyContent: 'space-between' }} padding="1rem 1rem 0 1rem">
+      <RowBetween style={{ alignItems: 'flex-start', justifyContent: 'space-between' }} padding="1rem 1rem 0 1rem">
         <HeaderElement>
           <Title href=".">
             <UniIcon>
-              <img style={{ height: 32 }} src={isDark ? LogoDark : Logo} alt="logo" />
+              <img style={{ width: 80, marginTop: '0.8rem' }} src={isDark ? Logo : LogoDark} alt="logo" />
             </UniIcon>
           </Title>
          
         </HeaderElement>
-        <h1 style ={{
-                fontSize: '30px'
-               }}>ETH</h1>
+        <h1 style ={{ fontSize: '26px', margin: 0}}>ETH</h1>
         <HeaderControls>
           <HeaderElement>
             <TestnetWrapper>
