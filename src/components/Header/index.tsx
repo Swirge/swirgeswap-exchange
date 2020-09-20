@@ -5,7 +5,7 @@ import { Text } from 'rebass'
 
 import styled from 'styled-components'
 
-import Logo from '../../assets/images/chef.png'
+import Logo from '../../assets/images/swirgepay.png'
 import LogoDark from '../../assets/images/chef.png'
 import { useActiveWeb3React } from '../../hooks'
 import { useDarkModeManager } from '../../state/user/hooks'
@@ -149,17 +149,18 @@ export default function Header() {
 
   return (
     <HeaderFrame>
-      <RowBetween style={{ alignItems: 'flex-start' }} padding="1rem 1rem 0 1rem">
+      <RowBetween style={{ alignItems: 'center', justifyContent: 'space-between' }} padding="1rem 1rem 0 1rem">
         <HeaderElement>
           <Title href=".">
             <UniIcon>
               <img style={{ height: 32 }} src={isDark ? LogoDark : Logo} alt="logo" />
             </UniIcon>
-            <StyledText>
-              SushiSwap <MasterChefText>Exchange</MasterChefText>
-            </StyledText>
           </Title>
+         
         </HeaderElement>
+        <h1 style ={{
+                fontSize: '30px'
+               }}>ETH</h1>
         <HeaderControls>
           <HeaderElement>
             <TestnetWrapper>

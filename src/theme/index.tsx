@@ -31,7 +31,7 @@ const mediaWidthTemplates: { [width in keyof typeof MEDIA_WIDTHS]: typeof css } 
   {}
 ) as any
 
-const white = '#FFFFFF'
+const white = '#f5f9ff'
 const black = '#000000'
 
 export function colors(darkMode: boolean): Colors {
@@ -59,14 +59,14 @@ export function colors(darkMode: boolean): Colors {
     advancedBG: darkMode ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.6)',
 
     //primary colors
-    primary1: darkMode ? '#2172E5' : '#805e49',
+    primary1: darkMode ? '#2172E5' : '#2883dd',
     primary2: darkMode ? '#3680E7' : '#88715f',
     primary3: darkMode ? '#4D8FEA' : '#aa9585',
     primary4: darkMode ? '#376bad70' : '#e2d6cf',
     primary5: darkMode ? '#153d6f70' : '#f0e9e7',
 
     // color text
-    primaryText1: darkMode ? '#6da8ff' : '#805e49',
+    primaryText1: darkMode ? '#6da8ff' : '#2883dd',
 
     // secondary colors
     secondary1: darkMode ? '#2172E5' : '#805e49',

@@ -107,6 +107,7 @@
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@uniswap/sdk": "./forks/uniswap-sdk"
+
+    "@uniswap/sdk": "3.0.3-beta.1"
   }
 }
