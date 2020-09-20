@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { Info, BookOpen, Code, PieChart, MessageCircle } from 'react-feather'
+import { BookOpen, Code, PieChart, MessageCircle, DollarSign, ShoppingBag } from 'react-feather'
 import styled from 'styled-components'
 import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
@@ -78,7 +78,7 @@ const MenuItem = styled(ExternalLink)`
   }
 `
 
-const CODE_LINK = 'https://github.com/Uniswap/uniswap-interface'
+const CODE_LINK = 'https://github.com/swirge/swirgeswap-exchange'
 
 export default function Menu() {
   const node = useRef<HTMLDivElement>()
@@ -94,11 +94,11 @@ export default function Menu() {
       </StyledMenuButton>
       {open && (
         <MenuFlyout>
-          <MenuItem id="link" href="https://uniswap.org/">
-            <Info size={14} />
-            About
+          <MenuItem id="link" href="https://app.swirge.com/">
+            <DollarSign size={14} />
+           Stake
           </MenuItem>
-          <MenuItem id="link" href="https://uniswap.org/docs/v2">
+          <MenuItem id="link" href="https://swirgepay.com/docs">
             <BookOpen size={14} />
             Docs
           </MenuItem>
@@ -106,13 +106,17 @@ export default function Menu() {
             <Code size={14} />
             Code
           </MenuItem>
-          <MenuItem id="link" href="https://discord.gg/EwFs3Pp">
+          <MenuItem id="link" href="https://discord.gg/zEUDHyu">
             <MessageCircle size={14} />
             Discord
           </MenuItem>
-          <MenuItem id="link" href="https://uniswap.info/">
+          <MenuItem id="link" href="https://swirgepay.info/">
             <PieChart size={14} />
             Analytics
+          </MenuItem>
+          <MenuItem id="link" href="https://app.swirge.com/">
+            <ShoppingBag size = {14} />
+            Farm
           </MenuItem>
         </MenuFlyout>
       )}
