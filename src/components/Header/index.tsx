@@ -43,7 +43,6 @@ const HeaderElement = styled.div`
 const HeaderElementWrap = styled.div`
   display: flex;
   align-items: center;
-
   ${({ theme }) => theme.mediaWidth.upToSmall`
     margin-top: 0.5rem;
 `};
@@ -55,7 +54,6 @@ const Title = styled.a`
   pointer-events: auto;
   text-decoration: none;
   text-decoration-style: unset;
-
   :hover {
     cursor: pointer;
   }
@@ -69,7 +67,6 @@ const AccountElement = styled.div<{ active: boolean }>`
   border-radius: 12px;
   white-space: nowrap;
   width: 100%;
-
   :focus {
     border: 1px solid blue;
   }
@@ -105,7 +102,6 @@ const HeaderControls = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-
   ${({ theme }) => theme.mediaWidth.upToSmall`
     flex-direction: column;
     align-items: flex-end;
@@ -118,20 +114,6 @@ const BalanceText = styled(Text)`
   `};
 `
 
-const StyledText = styled.span`
-  color: #5b3926;
-  font-family: 'Reem Kufi', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  margin-left: 8px;
-  @media (max-width: 400px) {
-    display: none;
-  }
-`
-const MasterChefText = styled.span`
-  font-family: 'Kaushan Script', sans-serif;
-`
 
 const NETWORK_LABELS: { [chainId in ChainId]: string | null } = {
   [ChainId.MAINNET]: null,
@@ -158,7 +140,7 @@ export default function Header() {
           </Title>
          
         </HeaderElement>
-        <h1 style ={{ fontSize: '26px', margin: 0}}>ETH</h1>
+        <h1 style ={{ fontSize: '20px', margin: 0, color: 'green'}}>ETH</h1>
         <HeaderControls>
           <HeaderElement>
             <TestnetWrapper>
