@@ -114,7 +114,6 @@ const BalanceText = styled(Text)`
   `};
 `
 
-
 const NETWORK_LABELS: { [chainId in ChainId]: string | null } = {
   [ChainId.MAINNET]: null,
   [ChainId.RINKEBY]: 'Rinkeby',
@@ -138,9 +137,8 @@ export default function Header() {
               <img style={{ width: 80, marginTop: '0.8rem' }} src={isDark ? Logo : LogoDark} alt="logo" />
             </UniIcon>
           </Title>
-         
         </HeaderElement>
-        <h1 style ={{ fontSize: '20px', margin: 0, color: 'green'}}>ETH</h1>
+        <h1 style={{ fontSize: '10px', margin: 0, color: 'green' }}>ETH</h1>
         <HeaderControls>
           <HeaderElement>
             <TestnetWrapper>
